@@ -49,12 +49,18 @@
     <h2>Contact</h2>
     <p>Send me a message below — I’ll get back to you soon!</p>
 
-    <form action="https://formsubmit.co/chasedimar@yahoo.com" method="POST" style="max-width:500px;margin:auto;text-align:left;">
+   <form action="https://formsubmit.co/chasedimar@yahoo.com" method="POST">
+	<!-- Honeypot -->
+	 <input type="text" name="_honey" style="display: none">
+
+	<!-- Disable Captcha -->
+	 <input type="hidden" name="_captcha" value="false">
+	
         <label for="name">Your Name:</label><br>
         <input type="text" id="name" name="name" required style="width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;"><br>
 
         <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="_replyto" required style="width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;"><br>
+        <input type="email" id="email" name="email" required style="width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;"><br>
 
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="6" required style="width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;"></textarea><br>
